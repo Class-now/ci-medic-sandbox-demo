@@ -1,0 +1,8 @@
+[project]
+name = "pagekit"
+version = "0.3.1"
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
