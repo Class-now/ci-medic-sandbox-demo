@@ -11,7 +11,7 @@ def page_count(total: int, per_page: int) -> int:
         raise ValueError("per_page must be positive")
     if total <= 0:
         return 0
-    return total // per_page
+    return math.ceil(total / per_page)
 
 
 def page_slice(page: int, per_page: int) -> tuple[int, int]:
